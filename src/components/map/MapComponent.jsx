@@ -1,5 +1,12 @@
 // src/components/map/MapComponent.jsx
 'use client';
+// Import Leaflet for map functionality
+import L from 'leaflet';
+
+// Import Firebase for database or other services
+import firebase from 'firebase/app';
+import 'firebase/database';  // If using Realtime Database
+//stop
 
 import { useState, useEffect, useRef } from 'react';
 import { subscribeToPositions } from '../../lib/positions';
